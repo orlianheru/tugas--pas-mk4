@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudnColor"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:background="@drawable/pawfit"
+        app:layout_constraintTop_toTopOf="@id/imageGuideTop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toBottomOf="@id/imageGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/imageGuidezLeft"
+        app:layout_constraintEnd_toEndOf="@id/imageGuideRight"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/loginGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/loginGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="22sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="30sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginEnd="80dp"
+            android:text="Let’s login to your account and start your calorie management"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintBottom_toBottomOf="@id/editGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintTop_toTopOf="@id/editGuideTop">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="100sp"
+            android:layout_marginTop="18dp"
+            android:hint="Password"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@id/belumGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/belumGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Don't Have Account?"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/goToLogin"
+            android:layout_width="wrap_content"
+            android:text="Sign In"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/cream"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Login"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:background="@drawable/button_landing_design"
+        app:layout_constraintTop_toTopOf="@id/tombolGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/tombolGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        tools:ignore="UnknownId" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/belumGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/belumGuideBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tombolGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tombolGuideBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/editGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/editGuideBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.615" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginGuideBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imageGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imageGuideBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imageGuideRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imageGuidezLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/yGuide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/yGuide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+</androidx.constraintlayout.widget.ConstraintLayout>

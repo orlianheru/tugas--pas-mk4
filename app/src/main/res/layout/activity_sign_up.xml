@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudnColor"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:background="@drawable/pawfit"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="@id/logoGuide3"
+        app:layout_constraintBottom_toBottomOf="@id/logoGuide4"
+        app:layout_constraintEnd_toEndOf="@id/logoGuide2"
+        app:layout_constraintStart_toStartOf="@+id/logoGuide" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/titleGuide"
+        app:layout_constraintBottom_toBottomOf="@id/titleGuideEnd"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="22sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="30sp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginEnd="80dp"
+            android:text="Let’s sign up to your account and start your calorie management"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/formGuide"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintBottom_toBottomOf="@id/formGuide2">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:hint="Enter Your Email"
+            android:textSize="16dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="100sp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="100sp"
+            android:layout_marginTop="18dp"
+            android:hint="Enter Phone Number"
+            android:textColor="@color/descriptionColor"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="100sp"
+            android:layout_marginTop="18dp"
+            android:hint="Password"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Sign Up"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:background="@drawable/button_landing_design"
+        app:layout_constraintTop_toTopOf="@id/buttonBottom"
+        app:layout_constraintBottom_toBottomOf="@id/buttonTop"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/loginTop"
+        app:layout_constraintBottom_toBottomOf="@id/loginBottom"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Already Have Account?"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:fontFamily="@font/poppins_semibold"
+
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/goToLogin"
+            android:layout_width="wrap_content"
+            android:text="Sign In"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/cream"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/yGuide1"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.08"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/yGuide2"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.92"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoGuide"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.34"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoGuide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoGuide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoGuide4"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.23"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleGuide"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.30"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleGuideEnd"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.40"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/formGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4397163" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/formGuide2"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.68"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buttonTop"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.78"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buttonBottom"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.72"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTop"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.92"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginBottom"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
