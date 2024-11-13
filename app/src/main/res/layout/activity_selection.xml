@@ -37,11 +37,36 @@
         app:layout_constraintBottom_toBottomOf="@id/textGuide1"
         android:layout_height="0dp"/>
 
+    <TextView
+        android:layout_width="0dp"
+        android:text="How much weight you want to gain?"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeMaxTextSize="20sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/textGuide5"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintBottom_toBottomOf="@id/textGuide6"
+        android:layout_height="0dp"/>
+
     <EditText
         android:layout_width="0dp"
         android:background="@drawable/background_shape"
         app:layout_constraintTop_toTopOf="@id/textGuide3"
         app:layout_constraintBottom_toBottomOf="@id/textGuide4"
+        app:layout_constraintStart_toStartOf="@id/logoGuide"
+        app:layout_constraintEnd_toEndOf="@id/editText2"
+        android:layout_height="0dp"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:background="@drawable/background_shape"
+        app:layout_constraintTop_toTopOf="@id/textGuide7"
+        app:layout_constraintBottom_toBottomOf="@id/textGuide8"
         app:layout_constraintStart_toStartOf="@id/logoGuide"
         app:layout_constraintEnd_toEndOf="@id/editText2"
         android:layout_height="0dp"/>
@@ -58,6 +83,35 @@
         android:background="@drawable/background_shape"
         app:layout_constraintEnd_toEndOf="@id/cape2"
         android:layout_height="30dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:text="Kg"
+        app:layout_constraintTop_toTopOf="@id/textGuide7"
+        app:layout_constraintBottom_toBottomOf="@id/textGuide8"
+        app:layout_constraintStart_toStartOf="@id/cape"
+        android:background="@drawable/background_shape"
+        app:layout_constraintEnd_toEndOf="@id/cape2"
+        android:layout_height="30dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Confirm"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:background="@drawable/button_landing_design"
+        app:layout_constraintTop_toTopOf="@id/tombolGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/tombolGuideBottom"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        tools:ignore="UnknownId" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/cape"
@@ -93,7 +147,51 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.75" />
-    
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/textGuide5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/textGuide6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/textGuide7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/textGuide8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tombolGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tombolGuideBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/textGuide4"
