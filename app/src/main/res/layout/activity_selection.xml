@@ -102,19 +102,20 @@
         android:layout_height="30dp"/>
 
     <Button
+        android:id="@+id/buttonConfirm"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Confirm"
-        android:textSize="16dp"
-        android:fontFamily="@font/poppins_regular"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:stateListAnimator="@null"
         android:background="@drawable/button_landing_design"
-        app:layout_constraintTop_toTopOf="@id/tombolGuideTop"
+        android:fontFamily="@font/poppins_regular"
+        android:stateListAnimator="@null"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="@id/tombolGuideBottom"
-        app:layout_constraintStart_toStartOf="@id/yGuide1"
         app:layout_constraintEnd_toEndOf="@id/yGuide2"
+        app:layout_constraintStart_toStartOf="@id/yGuide1"
+        app:layout_constraintTop_toTopOf="@id/tombolGuideTop"
         tools:ignore="UnknownId" />
 
     <androidx.constraintlayout.widget.Guideline
