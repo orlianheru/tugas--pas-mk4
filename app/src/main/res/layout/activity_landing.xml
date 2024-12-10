@@ -89,10 +89,12 @@
         app:layout_constraintStart_toStartOf="@id/yGuide"
         app:layout_constraintEnd_toEndOf="@id/yGuideButton"
         android:text="Sign Up"
+        style="@style/CustomButtonStyle"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:fontFamily="@font/poppins_bold"
         android:textSize="16dp"
+        android:backgroundTint="@color/cream"
         android:stateListAnimator="@null"
         android:background="@drawable/button_landing_design"
         android:layout_height="0dp"/>
